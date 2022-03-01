@@ -20,12 +20,32 @@ form input,
 
 form input {
   height: 2rem;
-  border: 0;
-  border-bottom: 1px gray solid;
+  border: 1px gray solid;
   letter-spacing: 1rem;
 }
 
 .notes-transposed {
   background: lightblue;
   letter-spacing: 1rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  width: 90%;
+}
+
+@media screen and (min-width: 1025px) {
+  .main-content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-content {
+    width: 40%;
+  }
 }
