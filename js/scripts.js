@@ -1,5 +1,7 @@
 let originalNotes = new Array();
-let transposedNotes = document.querySelector('.notes-transposed');
+let transposedNotes = new Array();
+const originalNotesInput = document.querySelector('input[data-action=original-notes]');
+const transposedlNotesInput = document.querySelector('input[data-action=transposed-notes]');
 const btnCleanForm = document.querySelector('a[data-action=clean-form]');
 const transposerForm = document.querySelector('form[data-action=transpose-notes]');
 
@@ -10,9 +12,9 @@ btnCleanForm.addEventListener('click', (e) => {
 
 transposerForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    transposedNotes.innerHTML = '';
-    const originalNotesInput = document.querySelector('input[name=original-notes]').value.toUpperCase();
-    originalNotes = originalNotesInput.split(',');
+    transposedNotes = [];
+    transposedlNotesInput.value = '';
+    originalNotes = originalNotesInput.value.toUpperCase().split(',');
     transposeNotes(originalNotes);
 });
 
@@ -34,5 +36,6 @@ const transposeNotes = (originalNotes) => {
 }
 
 const writeTransposeNote = (note) => {
-    transposedNotes.innerHTML += note;
+    transposedNotes.push(note);
+    transposedlNotesInput.value = transposedNotes;
 }

@@ -3,7 +3,6 @@
 ## To be executed
 
 - Salar imagem da transposição
-- Separar as notas transpostas por traço
 - No carregamento da página, trazer a última transposição feita
 
 ### Jekyll Themes

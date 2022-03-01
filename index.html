@@ -29,14 +29,14 @@
             <form data-action="transpose-notes">
                 <p>Transposition name:</p>
                 <input type="text" class="transpose-name">
-                <input type="text" name="original-notes" placeholder="Write the notes to be transposed here">
+                <input type="text" data-action="original-notes" placeholder="Write the notes to be transposed here">
                 <div>
                     <input type="submit" value="Do it!">
                     <a href="#" data-action="clean-form">Clean</a>
                 </div>
+                <p>Transposed notes:</p>
+                <input type="text" data-action="transposed-notes" disabled>
             </form>
-            <p>Transposed notes:</p>
-            <p class="notes-transposed"></p>
         </section>
         <script src="js/scripts.js" async defer></script>
     </body>

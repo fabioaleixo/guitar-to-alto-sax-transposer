@@ -19,6 +19,10 @@ form input[type="text"],
   width: 100%;
 }
 
+form input:disabled {
+  background: lightgray;
+}
+
 form input[type="text"] {
   height: 2rem;
   border: 1px gray solid;
@@ -63,11 +67,6 @@ form input[type="submit"]:hover {
   cursor: pointer;
   background: darkgray;
   color: white;
-}
-
-.notes-transposed {
-  background: lightgray;
-  letter-spacing: 1rem;
 }
 
 body {
