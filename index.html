@@ -27,10 +27,12 @@
             <p>For that, wrtie below the notes separated by comma as played on the guitar to be transposed and press entrer.</p>
             <p>PS: Use N# and Nb for half tones. Example: A#, Bb</p>
             <form data-action="transpose-notes">
-                <input type="text" name="original-notes">
+                <p>Transposition name:</p>
+                <input type="text" class="transpose-name">
+                <input type="text" name="original-notes" placeholder="Write the notes to be transposed here">
                 <div>
-                    <input type="submit" value="Transpor">
-                    <a href="#" data-action="clean-form">Limpar</a>
+                    <input type="submit" value="Do it!">
+                    <a href="#" data-action="clean-form">Clean</a>
                 </div>
             </form>
             <p>Transposed notes:</p>

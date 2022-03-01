@@ -22,7 +22,16 @@ form input[type="text"],
 form input[type="text"] {
   height: 2rem;
   border: 1px gray solid;
-  letter-spacing: 1rem;
+}
+
+form p {
+  margin-top: 4rem;
+}
+
+form input[type="text"].transpose-name {
+  border: 0;
+  border-bottom: 1px gray solid;
+  margin-bottom: 4rem;
 }
 
 form div {
