@@ -5,11 +5,6 @@ const transposedlNotesInput = document.querySelector('input[data-action=transpos
 const btnCleanForm = document.querySelector('a[data-action=clean-form]');
 const transposerForm = document.querySelector('form[data-action=transpose-notes]');
 
-btnCleanForm.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.querySelector('input[name=original-notes]').value = '';
-});
-
 transposerForm.addEventListener('submit', (e) => {
     e.preventDefault();
     transposedNotes = [];

@@ -21,21 +21,29 @@
             <p>I decided to program this to help me on the trasnposition of guitar notes to alto sax register key since I use apps like Songster to get some stuff.</p>
             <h2>Why?</h2>
             <p>The Alto Sax is tunned on Eb register key while the guitar is tunned on the C register key, so, every note on the alto sax must be transposed 1 and a half tone down to sounds like the guitar's C.</p>
-            <p>For example, the A note on the alto sax, sounds like an C on the guitar or piano.</p>
+            <p>For example, the A note on the alto sax, sounds like an C on the guitar or on a piano.</p>
             <h2>The Transposer</h2>
-            <p>Shut the fuck up and give me my notes.</p>
-            <p>For that, wrtie below the notes separated by comma as played on the guitar to be transposed and press entrer.</p>
-            <p>PS: Use N# and Nb for half tones. Example: A#, Bb</p>
+            <p>Use N# and Nb for half tones. Example: A#, Bb</p>
+            <hr noshade>
             <form data-action="transpose-notes">
-                <p>Transposition label:</p>
-                <input type="text" class="transpose-name">
-                <input type="text" data-action="original-notes" placeholder="Write the notes to be transposed here">
-                <div>
-                    <input type="submit" value="Do it!">
-                    <a href="#" data-action="clean-form">Clean</a>
-                </div>
-                <p>Transposed notes:</p>
-                <input type="text" data-action="transposed-notes" disabled>
+                <ul>
+                    <li>
+                        <label for="labelInput">1. Enter a optional label text to identify the transposition</label>
+                        <input type="text" id="labelInput" placeholder="Enter the label text here">
+                    </li>
+                    <li>
+                        <label for="originalNoteInput">2. Enter the notes to be transposed here</label>
+                        <input type="text" data-action="original-notes" id="originalNoteInput" placeholder="Enter the notes here">
+                    </li>
+                    <li>
+                        <label for="submitInput" class="sr-only">Button to do the transposition</label>
+                        <input type="submit" value="Do it!">
+                    </li>
+                    <li>
+                        <label for="submitInput" class="sr-only">Transposed notes below:</label>
+                        <input type="text" data-action="transposed-notes" disabled>
+                    </li>
+                </ul>
             </form>
         </section>
         <script src="js/scripts.js" async defer></script>

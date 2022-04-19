@@ -1,17 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap');
+
 h1,
 h2,
 p,
 a,
-input {
-  font-family: "Courier New", "Trebuchet MS";
+li,
+input,
+::placeholder {
+  font-family: 'Barlow Semi Condensed', "Trebuchet MS";
+  font-weight: 200;
 }
 
 h1 {
   font-size: 2rem;
 }
 
-p {
+h2 {
+  margin: 4rem 0 0;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+p, li {
   font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 3rem 0 0
+}
+
+label {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+.sr-only {
+  display: none;
 }
 
 form input[type="text"],
@@ -24,58 +57,52 @@ form input[type="text"],
 }
 
 form input:disabled {
-  background: lightgray;
-}
-
-form input[type="text"] {
-  height: 2rem;
-  border: 1px gray solid;
+  background: #91f5ff;
+  color: #0077a3;
+  border: 2px #00e9ff solid;
 }
 
 form p {
   margin-top: 4rem;
 }
 
-form input[type="text"].transpose-name {
-  border: 0;
-  border-bottom: 1px gray solid;
-  margin-bottom: 4rem;
-}
-
-form div {
+form li:nth-child(3) {
   display: flex;
+  justify-content: center;
 }
 
-form div a,
 form input[type="submit"] {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  width: 100%;
   text-align: center;
   text-decoration: none;
-  color: gray;
-  border: 1px gray solid;
+  color: white;
+  background-color: #0077a3;
+  border: 2px #0077a3 solid;
   box-sizing: border-box;
   padding: 1rem;
   font-size: 1.3rem;
+  font-weight: bold;
   margin: 1rem 1rem 0 0;
+  transition: all .2s;
 }
 
-form div a {
-  margin: 1rem 0 0 1rem;
-}
-
-form div a:hover,
 form input[type="submit"]:hover {
   cursor: pointer;
-  background: darkgray;
-  color: white;
+  background: #91f5ff;
+  color: #0077a3;
 }
 
 body {
   display: flex;
   justify-content: center;
+  padding: 0 0 4rem;
+}
+
+hr {
+  height: 2px;
+  background-color: #0077a3;
+  border: 0;
+  margin: 4rem 0;
 }
 
 .main-content {
@@ -85,6 +112,9 @@ body {
 @media screen and (min-width: 1025px) {
   .main-content {
     width: 50%;
+  }
+  form input[type="submit"] {
+    width: 30%;
   }
 }
 
