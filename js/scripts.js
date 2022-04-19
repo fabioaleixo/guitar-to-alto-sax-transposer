@@ -29,9 +29,9 @@ const transposeNotes = (originalNotes) => {
         (note === 'F#' || note === 'GB') && writeTransposeNote('D#')
         note === 'G' && writeTransposeNote('E');
         (note === 'G#' || note === 'AB') && writeTransposeNote('F');
-        note === 'A' && writeTransposeNote('F');
-        (note === 'A#' || note === 'BB') && writeTransposeNote('F#');
-        note === 'B' && writeTransposeNote('G');
+        note === 'A' && writeTransposeNote('F#');
+        (note === 'A#' || note === 'BB') && writeTransposeNote('G');
+        note === 'B' && writeTransposeNote('G#');
     });
 }
 
