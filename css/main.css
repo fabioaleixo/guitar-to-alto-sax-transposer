@@ -62,10 +62,6 @@ form input:disabled {
   border: 2px #00e9ff solid;
 }
 
-form p {
-  margin-top: 4rem;
-}
-
 form li:nth-child(3) {
   display: flex;
   justify-content: center;
